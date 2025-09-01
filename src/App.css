@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Figma font */
+  background: #f0f2f5; /* Light background */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #1f2937; /* Dark navbar */
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+}
+
+.menu a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu.open {
+  display: flex;
+}
+
+/* Desktop Navbar */
+@media (min-width: 1024px) {
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .menu a {
+    margin: 0 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Container + Section */
+.container {
+  padding: 32px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Cards */
+.card {
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Desktop grid */
+@media (min-width: 1024px) {
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  background: #3b82f6; /* Primary color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb; /* Darker on hover */
+}
+
+/* Input */
+.input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .input {
+    width: auto;
+  }
+}
+
+/* Nested Checkbox Section */
+.checkbox-section {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.checkbox-section label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #111827;
+  margin-top: 12px;
+}
+
+.parent-checkbox {
+  margin-top: 16px;
+}
+
+.child-checkboxes {
+  margin-left: 24px;
+  margin-top: 8px;
+}
+
+/* Custom checkbox color */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+
+
