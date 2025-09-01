@@ -112,7 +112,6 @@ body, html {
   overflow-x: hidden;
 }
 
-/* Container responsive */
 .container {
   max-width: 100%;
   padding: 16px;
@@ -128,7 +127,6 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Card fix */
 .card {
   width: 100%;      
   max-width: 100%;
